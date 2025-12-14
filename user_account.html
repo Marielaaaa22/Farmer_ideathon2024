@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create Farmer Account</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('fa.avif') center/cover no-repeat;
+        }
+        .overlay {
+            backdrop-filter: blur(8px);
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Align items vertically */
+        }
+        form {
+            background-color: #EFE0A4;
+            border-radius: 8px;
+            padding: 1rem;
+            width: 280px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #fff;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+            text-align: center;
+            font-size: 2rem; /* Increased font size for better visibility */
+            margin-bottom: 1.5rem; /* Spacing between the header and the form */
+            width: 100%; /* To make it span across the full width */
+        }
+        label {
+            font-size: 0.9rem;
+            margin: 0.5rem 0 0.2rem;
+            color: #555;
+        }
+        input {
+            width: 95%;
+            padding: 0.4rem;
+            font-size: 0.9rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 0.8rem;
+        }
+        input[type="submit"] {
+            background: #03623A;
+            color: #fff;
+            width:100%;
+            font-weight: 600;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background: #45a049;
+        }
+        legend {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 0.5rem;
+            color: #03623A;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>Welcome to SakaMart!</h1>
+        <form action="userlogin.html" method="POST">
+            <fieldset>
+                <legend>Create an Account</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name">
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address">
+
+                <label for="contact">Contact:</label>
+                <input type="text" id="contact" name="contact" placeholder="Enter your contact number">
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Choose a username">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a password">
+
+                <input type="submit" name="btnsave" value="Create">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
