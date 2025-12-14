@@ -1,0 +1,199 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>     
+    <meta charset="UTF-8">     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <title>Farming Tips - Planting Crops Tutorial</title>     
+    <!-- Bootstrap CSS -->     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">   
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">  
+    <style>         
+        /* Custom Theme Color */    
+        body {
+            font-family: Arial, sans-serif !important;
+            margin: 0;
+            background-color: white;
+            color: #333;
+        } 
+        .navbar {
+            background-color: #03623A;
+            padding: 15px 20px;
+            display: flex;
+            height: 70px;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 50px; padding-right: 50px;
+            box-shadow: 0 2px 2px rgba(175, 186, 204, 0.527);
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            margin: 0 10px;
+        }
+        .tab .inactive:hover {
+            text-decoration: underline;
+        }
+        .tab{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .tab h2{
+            font-size: 20px;
+        }
+        .tab .active{
+            color: rgb(254, 132, 66);;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+        .logo h1{
+            font-size: 20px;
+        }
+        .logo img{
+            height: 50px;
+            width: 50px;
+            object-fit: cover;
+            border-radius: 100px;
+            margin-top: -5px;
+        }   
+        .video-thumbnail {             
+            width: 100%;             
+            height: auto;             
+            border-radius: 5px;         
+        }         
+        .video-card {             
+            border: 1px solid #ddd;             
+            border-radius: 5px;             
+            margin-bottom: 20px;         
+        }         
+        .video-info {             
+            padding: 10px;         
+        }         
+        .video-title {             
+            font-size: 18px;             
+            font-weight: bold;         
+        }         
+        .video-channel {             
+            color: #555;         
+        }         
+        .sidebar-list a {             
+            text-decoration: none;             
+            color: #03623A;         
+        }         
+        .sidebar-list a:hover {             
+            text-decoration: underline;         
+        }    
+        .premium-icon {             
+            color: gold;             
+            margin-left: 5px;         
+        } 
+    </style> 
+</head> 
+<body>  
+
+<!-- Navigation Bar --> 
+<div class="navbar">
+    <div class="logo">
+        <img src="./images/logo.png">
+        <a href="homepage.html"><h1>SakaMart</h1></a>
+    </div>
+    <div class="tab">
+        <a href="homepage.html" class="inactive"><h2>Home</h2></a>
+        <a href="gis.html" class="inactive"><h2>Map</h2></a>
+        <a href="market.html" class="inactive"><h2>Product</h2></a>
+        <a href="learning.html" class="active"><h2>SakaLearn</h2></a>
+        <a href="subs.html"><h2 style="color: gold;" class="inactive">Pro <i class="fas fa-crown premium-icon"></i></h2></a>
+    </div>
+</div>
+
+<!-- Main Content Section --> 
+<div class="container mt-4">     
+    <div class="row">         
+        <!-- Video Content Column -->         
+        <div class="col-lg-8">             
+            <!-- Video Embed -->             
+            <div class="embed-responsive embed-responsive-16by9 mb-4">                 
+                <iframe class="embed-responsive-item" src="Paano Magtanim ng Labanos_.mp4" allowfullscreen></iframe>             
+            </div>              
+
+            <!-- Video Description and Details -->             
+            <div class="video-info">                 
+                <h3 class="video-title">How to Plant Radishes: A Complete Guide</h3>                 
+                <p class="video-channel">Farming Mastery Channel</p>                 
+                <p class="text-muted">Published 2 days ago | 150K views</p>                 
+                <p>In this tutorial, we’ll walk you through planting and growing radishes, from selecting the right variety and preparing the soil to sowing seeds.                      
+                    Learn the best techniques for caring for your plants, harvesting at the right time, and managing pests naturally.                      
+                    Whether you're a beginner or an experienced gardener, this guide will help you grow crisp, flavorful radishes in your garden for a fresh and satisfying harvest.</p>             
+            </div>              
+
+            <!-- Suggested Videos Section -->             
+            <h4>Suggested Videos</h4>             
+            <div class="row">                 
+                <!-- Suggested Video 1 -->                 
+                <div class="col-md-4">                     
+                    <div class="card video-card">                         
+                        <img src="okra.png" class="card-img-top video-thumbnail" alt="Video Thumbnail">                         
+                        <div class="card-body video-info">                             
+                            <h5 class="card-title video-title">Planting Okra: A Step-by-Step Guide
+                                <i class="fas fa-crown premium-icon"></i>
+                            </h5>                             
+                            <p class="card-text video-channel">Farming Mastery Channel</p>                         
+                        </div>                     
+                    </div>                 
+                </div>                  
+
+                <!-- Suggested Video 2 -->                 
+                <div class="col-md-4">                     
+                    <div class="card video-card">                         
+                        <img src="kamote.png" class="card-img-top video-thumbnail" alt="Video Thumbnail" width="400px" height="250px">                         
+                        <div class="card-body video-info">                             
+                            <h5 class="card-title video-title">How to Grow Sweet Potato Tops in Small Spaces</h5>                             
+                            <p class="card-text video-channel">Farming Mastery Channel</p>                         
+                        </div>                     
+                    </div>                 
+                </div>                  
+
+                <!-- Suggested Video 3 -->                 
+                <div class="col-md-4">                     
+                    <div class="card video-card">                         
+                        <img src="kalabasa.png" class="card-img-top video-thumbnail" alt="Video Thumbnail">                         
+                        <div class="card-body video-info">                             
+                            <h5 class="card-title video-title">How to Plant Squash: A Complete Guide
+                                <i class="fas fa-crown premium-icon"></i>
+                            </h5>                             
+                            <p class="card-text video-channel">Farming Mastery Channel</p>                         
+                        </div>                     
+                    </div>                 
+                </div>             
+            </div>         
+        </div>          
+
+        <!-- Sidebar with Related Content -->         
+        <div class="col-lg-4">             
+            <h4>Recommended Channels</h4>             
+            <ul class="list-unstyled sidebar-list">                 
+                <li><a href="#">Organic Farming Tips</a></li>                 
+                <li><a href="#">Gardening Made Easy</a></li>                 
+                <li><a href="#">Greenhouse Gardening</a></li>                 
+                <li><a href="#">Beginner's Farming Guide</a></li>             
+            </ul>              
+
+            <h4>Trending Videos</h4>             
+            <ul class="list-unstyled sidebar-list">                 
+                <li><a href="#">How to Grow Your Own Herbs Indoors</a></li>                 
+                <li><a href="#">Secrets to Successful Composting</a></li>                 
+                <li><a href="#">Best Tools for Small Farms</a></li>             
+            </ul>         
+        </div>     
+    </div> 
+</div>  
+
+<!-- Bootstrap JS (optional) --> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>  
+
+</body> 
+</html>

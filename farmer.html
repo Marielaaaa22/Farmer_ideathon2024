@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">   
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> 
+   <style>
+       /* General Styles */
+       body {
+           font-family: Arial, sans-serif !important;
+           margin: 0;
+           background-color: white;
+           color: #333;
+       }
+       /* Navigation Bar */
+       .navbar {
+           background-color: #03623A;
+           padding: 15px 20px;
+           display: flex;
+           height: 70px;
+           justify-content: space-between;
+           align-items: center;
+           padding-left: 50px; padding-right: 50px;
+           box-shadow: 0 2px 2px rgba(175, 186, 204, 0.527);
+       }
+       .navbar a {
+           color: white;
+           text-decoration: none;
+           font-size: 1rem;
+           margin: 0 10px;
+       }
+       .tab .inactive:hover {
+           text-decoration: underline;
+       }
+       .tab{
+           display: flex;
+           align-items: center;
+           gap: 20px;
+       }
+       .tab h2{
+           font-size: 20px;
+       }
+       .tab .active{
+           color: rgb(254, 132, 66);;
+       }
+       .logo{
+           display: flex;
+           align-items: center;
+       }
+       .logo h1{
+           font-size: 20px;
+       }
+       .logo img{
+           height: 50px;
+           width: 50px;
+           object-fit: cover;
+           border-radius: 100px;
+           margin-top: -5px;
+       }
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .p-3{
+            background-color: #EFE0A4;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="./images/logo.png">
+            <a href="homepage.html"><h1>SakaMart</h1></a>
+        </div>
+        <div class="tab">
+            <a href="homepage.html" class="inactive"><h2>Home</h2></a>
+            <a href="gis.html" class="inactive"><h2>Map</h2></a>
+            <a href="market.html" class="active"><h2>Product</h2></a>
+            <a href="learning.html" class="inactive"><h2>SakaLearn</h2></a>
+            <a href="subs.html"><h2 style="color: gold;" class="inactive">Pro <i class="fas fa-crown premium-icon"></i></h2></a>
+        </div>
+    </div>
+
+    <h1 style="margin: auto; font-size: 23px; font-weight: normal; text-align: center; margin-top: 30px;">Farmer Product Management</h1>
+
+    <a href="profile.html"><img src="./images/back.png" style="height: 30px; margin-left: 60px; margin-bottom: 5px;"></a>
+
+<div class="container mt-5">
+    <div class="row g-3">
+        <!-- First Profile Box -->
+        <div class="col-md-6">
+            <div class="card shadow-sm p-3" style="background-color: #EFE0A4;">
+                <div class="d-flex align-items-start">
+                    <!-- Profile Picture -->
+                    <img src="ID/1.webp" alt="Profile Picture" class="rounded-circle me-3" style="object-fit: cover;" height="100px" width="100px">
+                    
+                    <!-- Profile Info -->
+                    <div>
+                        <h5 class="mb-1">Albert Reyes</h5>
+                        <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>San Fernando</p>
+                        <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i>+6394 5356 7363</p>
+                    </div>
+                </div>
+                <!-- Selling Items & Harvest Times -->
+                <div class="mt-3">
+                    <div class="row">
+                        <!-- Label for Items -->
+                        <div class="col-6">
+                            <h6>Crops:</h6>
+                        </div>
+                        <!-- Label for Harvest Times -->
+                        <div class="col-6">
+                            <h6>Harvest Time:</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <!-- List of Items -->
+                            <ul class="ps-3 mb-0">
+                                <li>Rice</li>
+                                <li>Corn</li>
+                                <li>Root Crops</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <!-- Harvest Times -->
+                            <ul class="ps-3 mb-0">
+                                <li>April</li>
+                                <li>May</li>
+                                <li>June</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Profile Box -->
+        <div class="col-md-6">
+            <div class="card shadow-sm p-3">
+                <div class="d-flex align-items-start">
+                    <!-- Profile Picture -->
+                    <img src="ID/2.webp" alt="Profile Picture" class="rounded-circle me-3" style="object-fit: cover;" width="100" height="100">
+                    
+                    <!-- Profile Info -->
+                    <div>
+                        <h5 class="mb-1">Miguel Trinidad</h5>
+                        <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Odiongan</p>
+                        <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i>+6394 5356 7363</p>
+                    </div>
+                </div>
+                <!-- Selling Items & Harvest Times -->
+                <div class="mt-3">
+                    <div class="row">
+                        <!-- Label for Items -->
+                        <div class="col-6">
+                            <h6>Crops:</h6>
+                        </div>
+                        <!-- Label for Harvest Times -->
+                        <div class="col-6">
+                            <h6>Harvest Time:</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <!-- List of Items -->
+                            <ul class="ps-3 mb-0">
+                                <li>Lanzones</li>
+                                <li>Mangoes</li>
+                                <li>Coconut</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <!-- Harvest Times -->
+                            <ul class="ps-3 mb-0">
+                                <li>April</li>
+                                <li>May</li>
+                                <li>June</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Profile Box -->
+        <div class="col-md-6">
+            <div class="card shadow-sm p-3">
+                <div class="d-flex align-items-start">
+                    <!-- Profile Picture -->
+                    <img src="ID/3.webp" alt="Profile Picture" class="rounded-circle me-3" style="object-fit: cover;" width="100" height="100">
+                    
+                    <!-- Profile Info -->
+                    <div>
+                        <h5 class="mb-1">Jonathan Dela Cruz</h5>
+                        <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>San Agustin</p>
+                        <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i>+6394 5356 7363</p>
+                    </div>
+                </div>
+                <!-- Selling Items & Harvest Times -->
+                <div class="mt-3">
+                    <div class="row">
+                        <!-- Label for Items -->
+                        <div class="col-6">
+                            <h6>Crops:</h6>
+                        </div>
+                        <!-- Label for Harvest Times -->
+                        <div class="col-6">
+                            <h6>Harvest Time:</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <!-- List of Items -->
+                            <ul class="ps-3 mb-0">
+                                <li>Pepper</li>
+                                <li>Squash</li>
+                                <li>Papayas</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <!-- Harvest Times -->
+                            <ul class="ps-3 mb-0">
+                                <li>April</li>
+                                <li>May</li>
+                                <li>June</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth Profile Box -->
+        <div class="col-md-6">
+            <div class="card shadow-sm p-3">
+                <div class="d-flex align-items-start">
+                    <!-- Profile Picture -->
+                    <img src="ID/4.webp" alt="Profile Picture" class="rounded-circle me-3" style="object-fit: cover;" width="100" height="100">
+                    
+                    <!-- Profile Info -->
+                    <div>
+                        <h5 class="mb-1">Jodee Santa Maria</h5>
+                        <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Corcuera</p>
+                        <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i>+6394 5356 7363</p>
+                    </div>
+                </div>
+                <!-- Selling Items & Harvest Times -->
+                <div class="mt-3">
+                    <div class="row">
+                        <!-- Label for Items -->
+                        <div class="col-6">
+                            <h6>Crops:</h6>
+                        </div>
+                        <!-- Label for Harvest Times -->
+                        <div class="col-6">
+                            <h6>Harvest Time:</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <!-- List of Items -->
+                            <ul class="ps-3 mb-0">
+                                <li>Durian</li>
+                                <li>Guava</li>
+                                <li>Cacao</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <!-- Harvest Times -->
+                            <ul class="ps-3 mb-0">
+                                <li>April</li>
+                                <li>May</li>
+                                <li>June</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fifth Profile Box -->
+        <div class="col-md-6">
+            <div class="card shadow-sm p-3">
+                <div class="d-flex align-items-start">
+                    <!-- Profile Picture -->
+                    <img src="ID/5.webp" alt="Profile Picture" class="rounded-circle me-3" style="object-fit: cover;" width="100" height="100">
+                    
+                    <!-- Profile Info -->
+                    <div>
+                        <h5 class="mb-1">Charlie Franco</h5>
+                        <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Ferrol</p>
+                        <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i>+6394 5356 7363</p>
+                    </div>
+                </div>
+                <!-- Selling Items & Harvest Times -->
+                <div class="mt-3">
+                    <div class="row">
+                        <!-- Label for Items -->
+                        <div class="col-6">
+                            <h6>Crops:</h6>
+                        </div>
+                        <!-- Label for Harvest Times -->
+                        <div class="col-6">
+                            <h6>Harvest Time:</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <!-- List of Items -->
+                            <ul class="ps-3 mb-0">
+                                <li>Crops</li>
+                                <li>Crops</li>
+                                <li>Crops</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <!-- Harvest Times -->
+                            <ul class="ps-3 mb-0">
+                                <li>April</li>
+                                <li>May</li>
+                                <li>June</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sixth Profile Box -->
+        <div class="col-md-6">
+            <div class="card shadow-sm p-3">
+                <div class="d-flex align-items-start">
+                    <!-- Profile Picture -->
+                    <img src="ID/6.webp" alt="Profile Picture" class="rounded-circle me-3" style="object-fit: cover;" width="100" height="100">
+                    
+                    <!-- Profile Info -->
+                    <div>
+                        <h5 class="mb-1">Abegail Legazpi</h5>
+                        <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Looc</p>
+                        <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i>+6394 5356 7363</p>
+                    </div>
+                </div>
+                <!-- Selling Items & Harvest Times -->
+                <div class="mt-3">
+                    <div class="row">
+                        <!-- Label for Items -->
+                        <div class="col-6">
+                            <h6>Crops:</h6>
+                        </div>
+                        <!-- Label for Harvest Times -->
+                        <div class="col-6">
+                            <h6>Harvest Time:</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <!-- List of Items -->
+                            <ul class="ps-3 mb-0">
+                                <li>Crops</li>
+                                <li>Crops</li>
+                                <li>Crops</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <!-- Harvest Times -->
+                            <ul class="ps-3 mb-0">
+                                <li>April</li>
+                                <li>May</li>
+                                <li>June</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seventh Profile Box -->
+        <div class="col-md-6">
+            <div class="card shadow-sm p-3">
+                <div class="d-flex align-items-start">
+                    <!-- Profile Picture -->
+                    <img src="ID/7.webp" alt="Profile Picture" class="rounded-circle me-3" style="object-fit: cover;" width="100" height="100">
+                    
+                    <!-- Profile Info -->
+                    <div>
+                        <h5 class="mb-1">Leslie Bolina</h5>
+                        <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Magdiwang</p>
+                        <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i>+6394 5356 7363</p>
+                    </div>
+                </div>
+                <!-- Selling Items & Harvest Times -->
+                <div class="mt-3">
+                    <div class="row">
+                        <!-- Label for Items -->
+                        <div class="col-6">
+                            <h6>Crops:</h6>
+                        </div>
+                        <!-- Label for Harvest Times -->
+                        <div class="col-6">
+                            <h6>Harvest Time:</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <!-- List of Items -->
+                            <ul class="ps-3 mb-0">
+                                <li>Crops</li>
+                                <li>Crops</li>
+                                <li>Crops</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <!-- Harvest Times -->
+                            <ul class="ps-3 mb-0">
+                                <li>April</li>
+                                <li>May</li>
+                                <li>June</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Eight Profile Box -->
+        <div class="col-md-6">
+            <div class="card shadow-sm p-3">
+                <div class="d-flex align-items-start">
+                    <!-- Profile Picture -->
+                    <img src="ID/8.jpg" alt="Profile Picture" class="rounded-circle me-3" style="object-fit: cover;" width="100" height="100">
+                    
+                    <!-- Profile Info -->
+                    <div>
+                        <h5 class="mb-1">Kevin Durant</h5>
+                        <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Santa Maria</p>
+                        <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i>+6394 5356 7363</p>
+                    </div>
+                </div>
+                <!-- Selling Items & Harvest Times -->
+                <div class="mt-3">
+                    <div class="row">
+                        <!-- Label for Items -->
+                        <div class="col-6">
+                            <h6>Crops:</h6>
+                        </div>
+                        <!-- Label for Harvest Times -->
+                        <div class="col-6">
+                            <h6>Harvest Time:</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <!-- List of Items -->
+                            <ul class="ps-3 mb-0">
+                                <li>Crops</li>
+                                <li>Crops</li>
+                                <li>Crops</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <!-- Harvest Times -->
+                            <ul class="ps-3 mb-0">
+                                <li>April</li>
+                                <li>May</li>
+                                <li>June</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nineth Profile Box -->
+        <div class="col-md-6">
+            <div class="card shadow-sm p-3">
+                <div class="d-flex align-items-start">
+                    <!-- Profile Picture -->
+                    <img src="ID/9.jpg" alt="Profile Picture" class="rounded-circle me-3" style="object-fit: cover;" width="100" height="100">
+                    
+                    <!-- Profile Info -->
+                    <div>
+                        <h5 class="mb-1">Mike Famorcan</h5>
+                        <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>San Andres</p>
+                        <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i>+6394 5356 7363</p>
+                    </div>
+                </div>
+                <!-- Selling Items & Harvest Times -->
+                <div class="mt-3">
+                    <div class="row">
+                        <!-- Label for Items -->
+                        <div class="col-6">
+                            <h6>Crops:</h6>
+                        </div>
+                        <!-- Label for Harvest Times -->
+                        <div class="col-6">
+                            <h6>Harvest Time:</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <!-- List of Items -->
+                            <ul class="ps-3 mb-0">
+                                <li>Crops</li>
+                                <li>Crops</li>
+                                <li>Crops</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <!-- Harvest Times -->
+                            <ul class="ps-3 mb-0">
+                                <li>April</li>
+                                <li>May</li>
+                                <li>June</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tenth Profile Box -->
+        <div class="col-md-6">
+            <div class="card shadow-sm p-3">
+                <div class="d-flex align-items-start">
+                    <!-- Profile Picture -->
+                    <img src="ID/10.jpg" alt="Profile Picture" class="rounded-circle me-3" style="object-fit: cover;" width="100" height="100">
+                    
+                    <!-- Profile Info -->
+                    <div>
+                        <h5 class="mb-1">Precious Mali</h5>
+                        <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Cajidiocan</p>
+                        <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i>+6394 5356 7363</p>
+                    </div>
+                </div>
+                <!-- Selling Items & Harvest Times -->
+                <div class="mt-3">
+                    <div class="row">
+                        <!-- Label for Items -->
+                        <div class="col-6">
+                            <h6>Crops:</h6>
+                        </div>
+                        <!-- Label for Harvest Times -->
+                        <div class="col-6">
+                            <h6>Harvest Time:</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <!-- List of Items -->
+                            <ul class="ps-3 mb-0">
+                                <li>Crops</li>
+                                <li>Crops</li>
+                                <li>Crops</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <!-- Harvest Times -->
+                            <ul class="ps-3 mb-0">
+                                <li>April</li>
+                                <li>May</li>
+                                <li>June</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer style="background-color: #03623A;">
+    <p>&copy; 2024 Farmer Hub. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap Icons and JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

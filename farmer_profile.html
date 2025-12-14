@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Profile</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #03623A;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            margin: 0 15px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .logo {
+            font-size: 1.5rem;
+            color: white;
+            font-weight: 600;
+        }
+
+        /* Sections */
+        .section {
+            display: none;
+            padding: 20px;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #03623A;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        /* Form Styling */
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: 600;
+        }
+        form input, form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #03623A;
+            color: white;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #03623A;
+        }
+
+        /* Farmer List */
+        .farmer-list {
+            margin: 10px 0;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .farmer-list h3 {
+            margin: 0;
+            color: #333;
+        }
+        .farmer-list p {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        /* Dashboard Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        table th {
+            background-color: #03623A;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Farmer Hub</div>
+        <a onclick="showSection('profile')">My Profile</a>
+        <a onclick="showSection('farmers')">Registered Farmers</a>
+        <a onclick="showSection('dashboard')">Dashboard</a>
+    </nav>
+
+    <!-- Profile Section -->
+    <div class="section" id="profile">
+        <h2>My Profile</h2>
+        <form>
+            <label for="crop">Crop Name:</label>
+            <input type="text" id="crop" name="crop" placeholder="Enter crop name">
+
+            <label for="harvest">Harvest Date:</label>
+            <input type="date" id="harvest" name="harvest">
+
+            <button type="submit">Save</button>
+        </form>
+    </div>
+
+    <!-- Registered Farmers Section -->
+    <div class="section" id="farmers">
+        <h2>Registered Farmers</h2>
+        <div class="farmer-list">
+            <h3>Juan Dela Cruz</h3>
+            <p>Address: Barangay A, San Fernando</p>
+            <p>Crops: Rice, Mango</p>
+            <p>Harvest Date: 2024-12-10</p>
+        </div>
+        <div class="farmer-list">
+            <h3>Maria Santos</h3>
+            <p>Address: Barangay B, Odiongan</p>
+            <p>Crops: Banana, Corn</p>
+            <p>Harvest Date: 2024-11-25</p>
+        </div>
+        <!-- Add more farmers as needed -->
+    </div>
+
+    <!-- Dashboard Section -->
+    <div class="section" id="dashboard">
+        <h2>Farmer Dashboard</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rice</td>
+                    <td>₱40/kg</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>Banana</td>
+                    <td>₱30/kg</td>
+                    <td>Out of Stock</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Show the selected section
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
