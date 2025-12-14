@@ -75,12 +75,11 @@
 </head>
 <body>
     <div class="overlay">
-        <!-- Account Created Message -->
         <h1>Account Created Successfully!</h1>
         <p class="login-msg">Now, please log in to continue:</p>
         
-        <!-- Login Form -->
-        <form action="market.html" method="POST">
+        <!-- FIXED LOGIN FORM (no POST, no 405) -->
+        <form onsubmit="window.location='market.html'; return false;">
             <fieldset>
                 <legend>User Login</legend>
 
@@ -96,4 +95,3 @@
     </div>
 </body>
 </html>
-
